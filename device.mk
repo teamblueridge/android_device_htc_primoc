@@ -119,7 +119,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel
 
 PRODUCT_COPY_FILES += \
-    device/htc/primoc/prebuilt/modules/bcmdhd.ko:system/lib/modules/bcmdhd.ko
+    device/htc/primoc/prebuilt/modules/bcmdhd.ko:system/lib/modules/bcmdhd.ko \
+    device/htc/primoc/prebuilt/modules/cpaccess.ko:system/lib/modules/cpaccess.ko \
+    device/htc/primoc/prebuilt/modules/dma_test.ko:system/lib/modules/dma_test.ko \
+    device/htc/primoc/prebuilt/modules/reset_modem.ko:system/lib/modules/reset_modem.ko
+	
 
 $(call inherit-product, build/target/product/full_base.mk)
 

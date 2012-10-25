@@ -27,6 +27,7 @@
 /dev/kgsl-2d0             0666   root       root
 /dev/kgsl-2d1             0666   root       root
 
+# these should not be world writable
 /dev/diag_arm9            0660   radio      radio
 /dev/android_adb          0660   adb        adb
 /dev/android_adb_enable   0660   adb        adb
