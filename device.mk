@@ -68,6 +68,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vold.umsdirtyratio=20
 
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.secure=0
+
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    persist.service.adb.enable=1
+
 DEVICE_PACKAGE_OVERLAYS += device/htc/primoc/overlay
 
 # GPS / Lights / Sensors
