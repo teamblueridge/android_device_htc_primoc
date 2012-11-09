@@ -60,6 +60,7 @@ BOARD_USES_QCOM_AUDIO_RESETALL := false
 BOARD_ADRENO_DECIDE_TEXTURE_TARGET := true
 ARCH_ARM_HAVE_NEON := true
 TARGET_USES_PMEM := true
+BOARD_NEEDS_MEMORYHEAPPMEM := true
 
 # Wifi related defines
 WIFI_BAND                        := 802_11_ABG
