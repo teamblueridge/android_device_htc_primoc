@@ -17,6 +17,7 @@
 # common msm7x30 configs
 $(call inherit-product, device/htc/msm7x30-common/msm7x30.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+$(call inherit-product, vendor/qcom/proprietary/qcom-vendor.mk)
 
 # The gps config appropriate for this device
 
