@@ -21,3 +21,6 @@
 /dev/ttySA0                                    0600    system  system
 /dev/smd9                                      0600    system  system
 
+# MSM Ion
+#regular apps need to be able to open ion
+/dev/ion                  0664   system     system
