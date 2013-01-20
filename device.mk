@@ -76,6 +76,12 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 
 DEVICE_PACKAGE_OVERLAYS += device/htc/primoc/overlay
 
+#GooManager OTA Support
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.goo.developerid=kalaker \
+    ro.goo.rom=sickleromPrimoc \
+    ro.goo.version=$(shell date +%s)
+
 # GPS / Lights / Sensors
 PRODUCT_PACKAGES += \
     gps.primoc \
