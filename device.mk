@@ -50,19 +50,24 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=240
 	
 # Carrier Info
-CDMA_GOOGLE_BASE := android-sprint-us
+CDMA_GOOGLE_BASE := android-virgin-us
 CDMA_CARRIER_ALPHA := Virgin_Mobile
 CDMA_CARRIER_NUMERIC := 311490
 
 # Property Overides for carrier
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.com.google.clientidbase=$(CDMA_GOOGLE_BASE) \
+    ro.com.google.clientidbase=android-htc \
+    ro.com.google.clientidbase.gmm=android-htc \
+    ro.com.google.clientidbase.yt=$(CDMA_GOOGLE_BASE) \
+    ro.com.google.clientidbase.am=$(CDMA_GOOGLE_BASE) \
+    ro.com.google.clientidbase.ms=$(CDMA_GOOGLE_BASE) \
     ro.cdma.home.operator.alpha=$(CDMA_CARRIER_ALPHA) \
     ro.cdma.home.operator.numeric=$(CDMA_CARRIER_NUMERIC) \
     gsm.sim.operator.alpha=$(CDMA_CARRIER_ALPHA) \
     gsm.sim.operator.numeric=$(CDMA_CARRIER_NUMERIC) \
     gsm.operator.alpha=$(CDMA_CARRIER_ALPHA) \
     gsm.operator.numeric=$(CDMA_CARRIER_NUMERIC)
+
 
 # Override /proc/sys/vm/dirty_ratio on UMS
 PRODUCT_PROPERTY_OVERRIDES += \
